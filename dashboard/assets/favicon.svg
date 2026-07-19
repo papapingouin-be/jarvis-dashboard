@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jarvis Dark favicon">
+  <defs>
+    <linearGradient id="g" x1="16" y1="10" x2="48" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7CE7FF"/>
+      <stop offset=".6" stop-color="#38D5FF"/>
+      <stop offset="1" stop-color="#8C7CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#05070D"/>
+  <path d="M32 9 51 20v22L32 57 13 42V20L32 9Z" fill="#101522" stroke="rgba(124,231,255,.32)" stroke-width="2"/>
+  <path d="M32 18 43 25v14L32 48 21 39V25l11-7Z" fill="none" stroke="url(#g)" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="6" fill="url(#g)"/>
+</svg>

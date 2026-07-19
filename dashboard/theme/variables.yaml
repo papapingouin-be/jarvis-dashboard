@@ -1,0 +1,171 @@
+# Jarvis Dark design tokens (v0.2)
+# Source of truth for the dashboard visual identity. These values are meant to be
+# reused by Home Assistant themes, card-mod snippets, and future dashboard cards.
+
+meta:
+  name: Jarvis Dark
+  version: "0.2"
+  scope: design-system-only
+  notes:
+    - No business cards, dashboards, MQTT entities, or automations are defined here.
+    - Animations are intentionally subtle and never blink.
+
+palette:
+  brand:
+    core: "#38D5FF"
+    core_soft: "#7CE7FF"
+    core_muted: "#1E8EA8"
+    halo: "rgba(56, 213, 255, 0.20)"
+    glow: "rgba(56, 213, 255, 0.34)"
+  accent:
+    violet: "#8C7CFF"
+    emerald: "#48E6A4"
+    amber: "#F7C948"
+    rose: "#FF6B9A"
+  neutral:
+    void: "#05070D"
+    shell: "#080B14"
+    surface: "#101522"
+    surface_raised: "#151B2B"
+    surface_overlay: "#1B2335"
+    border: "#2B3650"
+    border_strong: "#40506F"
+    text: "#EAF6FF"
+    text_muted: "#A9B7CA"
+    text_subtle: "#6F7F96"
+  semantic:
+    success: "#48E6A4"
+    warning: "#F7C948"
+    error: "#FF5C7A"
+    info: "#38D5FF"
+
+colors:
+  background:
+    page: "var(--jarvis-color-void)"
+    gradient: "radial-gradient(circle at 20% 0%, rgba(56, 213, 255, 0.12), transparent 28%), radial-gradient(circle at 85% 15%, rgba(140, 124, 255, 0.10), transparent 26%), linear-gradient(180deg, #05070D 0%, #080B14 100%)"
+    card: "rgba(16, 21, 34, 0.84)"
+    card_hover: "rgba(21, 27, 43, 0.92)"
+    chip: "rgba(27, 35, 53, 0.76)"
+  text:
+    primary: "var(--jarvis-color-text)"
+    secondary: "var(--jarvis-color-text-muted)"
+    tertiary: "var(--jarvis-color-text-subtle)"
+    inverse: "#05070D"
+  border:
+    default: "rgba(124, 231, 255, 0.16)"
+    hover: "rgba(124, 231, 255, 0.36)"
+    active: "rgba(56, 213, 255, 0.58)"
+  overlay:
+    scrim: "rgba(5, 7, 13, 0.72)"
+    glass: "rgba(10, 15, 27, 0.64)"
+
+shadows:
+  none: "none"
+  xs: "0 1px 2px rgba(0, 0, 0, 0.22)"
+  sm: "0 8px 18px rgba(0, 0, 0, 0.24)"
+  md: "0 16px 40px rgba(0, 0, 0, 0.34)"
+  lg: "0 24px 70px rgba(0, 0, 0, 0.42)"
+  glow: "0 0 0 1px rgba(56, 213, 255, 0.16), 0 0 24px rgba(56, 213, 255, 0.14)"
+  glow_hover: "0 0 0 1px rgba(56, 213, 255, 0.30), 0 0 32px rgba(56, 213, 255, 0.20)"
+
+radii:
+  xs: 6px
+  sm: 10px
+  md: 16px
+  lg: 22px
+  xl: 28px
+  pill: 999px
+
+spacing:
+  0: 0
+  1: 4px
+  2: 8px
+  3: 12px
+  4: 16px
+  5: 20px
+  6: 24px
+  8: 32px
+  10: 40px
+  12: 48px
+
+layout:
+  desktop:
+    breakpoint: "1024px and up"
+    page_padding: 32px
+    card_gap: 20px
+    card_padding: 22px
+    grid_min_column: 320px
+  tablet:
+    breakpoint: "768px to 1023px"
+    page_padding: 24px
+    card_gap: 16px
+    card_padding: 18px
+    grid_min_column: 280px
+  mobile:
+    breakpoint: "up to 767px"
+    page_padding: 14px
+    card_gap: 12px
+    card_padding: 16px
+    grid_min_column: 100%
+
+typography:
+  family:
+    display: "Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    body: "Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    mono: "JetBrains Mono, 'Roboto Mono', SFMono-Regular, Consolas, monospace"
+  weight:
+    regular: 400
+    medium: 500
+    semibold: 600
+    bold: 700
+  size:
+    xs: 0.75rem
+    sm: 0.875rem
+    md: 1rem
+    lg: 1.125rem
+    xl: 1.375rem
+    xxl: 1.75rem
+    display: 2.25rem
+  line_height:
+    tight: 1.15
+    normal: 1.45
+    relaxed: 1.65
+  letter_spacing:
+    title: 0.01em
+    label: 0.08em
+
+animations:
+  duration:
+    fast: 140ms
+    normal: 220ms
+    slow: 420ms
+  easing:
+    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    emphasis: "cubic-bezier(0.16, 1, 0.3, 1)"
+  effects:
+    hover_lift: "translateY(-1px)"
+    press: "scale(0.99)"
+    subtle_reveal: "opacity 220ms cubic-bezier(0.2, 0, 0, 1), transform 220ms cubic-bezier(0.2, 0, 0, 1)"
+  policy:
+    blinking: false
+    max_looping_motion: "ambient gradients only, very slow, optional"
+
+components:
+  card:
+    background: "var(--jarvis-card-background)"
+    border: "1px solid var(--jarvis-border-color)"
+    radius: "var(--jarvis-radius-lg)"
+    shadow: "var(--jarvis-shadow-md), var(--jarvis-shadow-glow)"
+    padding: "var(--jarvis-card-padding)"
+  badge:
+    background: "rgba(56, 213, 255, 0.10)"
+    border: "1px solid rgba(56, 213, 255, 0.24)"
+    radius: "var(--jarvis-radius-pill)"
+    text_transform: uppercase
+  title:
+    color: "var(--primary-text-color)"
+    weight: 700
+    letter_spacing: "var(--jarvis-letter-spacing-title)"
+  separator:
+    height: 1px
+    background: "linear-gradient(90deg, transparent, rgba(124, 231, 255, 0.30), transparent)"
