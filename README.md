@@ -1,7 +1,7 @@
 # JARVIS Dashboard
 
-**Version:** v0.1  
-**Status:** Open source project bootstrap
+**Version:** v0.3  
+**Status:** Mission Control screen ready
 
 JARVIS Dashboard is a Home Assistant supervision interface designed for monitoring an AI coding agent in real time. It is not intended to look or feel like a default Home Assistant dashboard. The design direction combines the operational clarity of NASA Mission Control, the observability density of Grafana, the container-focused structure of Portainer, the developer ergonomics of VSCode, the camera/system awareness of Frigate, and a subtle Iron Man JARVIS-inspired visual language.
 
@@ -55,7 +55,7 @@ Data will be provided primarily through MQTT and rendered through modular Home A
 └── ROADMAP.md
 ```
 
-## Version v0.1 Scope
+## Version v0.3 Scope
 
 This release only creates the initial open source project structure:
 
@@ -67,7 +67,7 @@ This release only creates the initial open source project structure:
 - modular dashboard folders;
 - initial dashboard documentation.
 
-No dashboard interface is implemented in v0.1.
+Version v0.3 introduces the single Mission Control screen intended for the official GitHub screenshot.
 
 ## Planned Home Assistant Integrations
 
